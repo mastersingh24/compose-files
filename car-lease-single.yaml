@@ -1,11 +1,11 @@
 membersrvc:
-  image: fabric05-ca
+  image: mastersingh24/fabric05-ca
   container_name: carlease-ca
   ports:
     - "50051:50051"
   command: membersrvc
 vp0:
-  image: fabric05-peer
+  image: mastersingh24/fabric05-peer
   container_name: carlease-peer
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
